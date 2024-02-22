@@ -16,6 +16,7 @@ const Home = () => {
           <p>Hello I'm</p>
           <h1>Walid Mostafa 🖐</h1>
           <h4>FrontEnd Developer</h4>
+          
           <a href="#Contact" className="my-big-btn">
             Say Hello <FontAwesomeIcon icon={faPaperPlane} />
           </a>

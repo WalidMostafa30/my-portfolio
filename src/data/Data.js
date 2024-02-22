@@ -1,0 +1,120 @@
+export const skillsData = [
+  {
+    name: "React",
+    icon: `<i class="fa-brands fa-react"></i>`,
+    deg: 80,
+    rate: "Intermediate",
+  },
+  {
+    name: "JavaScript",
+    icon: `<i class="fa-brands fa-square-js"></i>`,
+    deg: 70,
+    rate: "Intermediate",
+  },
+  {
+    name: "TypeScript",
+    icon: `<h1>TS</h1>`,
+    deg: 60,
+    rate: "Intermediate",
+  },
+  {
+    name: "Next JS",
+    icon: `<i class="fa-solid fa-n"></i>`,
+    deg: 60,
+    rate: "Intermediate",
+  },
+  {
+    name: "Bootstrap",
+    icon: `<i class="fa-brands fa-bootstrap"></i>`,
+    deg: 90,
+    rate: "Intermediate",
+  },
+  {
+    name: "Redux",
+    icon: `<i class="fa-solid fa-registered"></i>`,
+    deg: 80,
+    rate: "Intermediate",
+  },
+  {
+    name: "HTML",
+    icon: `<i class="fa-brands fa-html5"></i>`,
+    deg: 90,
+    rate: "Intermediate",
+  },
+  {
+    name: "CSS",
+    icon: `<i class="fa-brands fa-css3"></i>`,
+    deg: 80,
+    rate: "Intermediate",
+  },
+  {
+    name: "Sass",
+    icon: `<i class="fa-brands fa-sass"></i>`,
+    deg: 60,
+    rate: "Intermediate",
+  },
+  {
+    name: "Git",
+    icon: `<i class="fa-brands fa-git"></i>`,
+    deg: 60,
+    rate: "Intermediate",
+  },
+  {
+    name: "GitHub",
+    icon: `<i class="fa-brands fa-github"></i>`,
+    deg: 70,
+    rate: "Intermediate",
+  },
+];
+
+export const projectsData = [
+  {
+    title: "Shopping Cart",
+    img: require("../Images/shopping-cart.png"),
+    github: "https://github.com/WalidMostafa30/My-shopping-cart",
+    demo: "https://sopping-cart-app.netlify.app/",
+    category: "React",
+  },
+  {
+    title: "Guess Game",
+    img: require("../Images/guess-game.png"),
+    github: "https://github.com/WalidMostafa30/Guess-Game",
+    demo: "https://walidmostafa30.github.io/Guess-Game/",
+    category: "JavaScript",
+  },
+  {
+    title: "Quran App",
+    img: require("../Images/Quran-App.png"),
+    github: "https://github.com/WalidMostafa30/Quran-App",
+    demo: "https://al-mostafa-app1.netlify.app/",
+    category: "React",
+  },
+  {
+    title: "Youtube Page",
+    img: require("../Images/youtube-page.png"),
+    github: "https://github.com/WalidMostafa30/youtube-page",
+    demo: "https://youtube-page1001.netlify.app/",
+    category: "JavaScript",
+  },
+  {
+    title: "Drag & Drop To-DO",
+    img: require("../Images/drag&drop-todo.png"),
+    github: "https://github.com/WalidMostafa30/Todo-List",
+    demo: "https://to-do-list1122.netlify.app/",
+    category: "React",
+  },
+  {
+    title: "Profile",
+    img: require("../Images/profile.png"),
+    github: "https://github.com/WalidMostafa30/templet",
+    demo: "https://walidmostafa30.github.io/templet/",
+    category: "JavaScript",
+  },
+  {
+    title: "To-DO List",
+    img: require("../Images/todo-list.png"),
+    github: "https://github.com/WalidMostafa30/ToDo-Redux",
+    demo: "https://vermillion-blini-75b855.netlify.app/",
+    category: "React",
+  },
+];

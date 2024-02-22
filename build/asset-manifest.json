@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e10a1187.css",
+    "main.js": "/static/js/main.4a93a48a.js",
+    "static/media/Quran-App.png": "/static/media/Quran-App.8b966c20e5193b10e10b.png",
+    "static/media/youtube-page.png": "/static/media/youtube-page.86338379c8e937a217b9.png",
+    "static/media/shopping-cart.png": "/static/media/shopping-cart.587096156165eb851506.png",
+    "static/media/profile.png": "/static/media/profile.4b6f2bc2fe505faccc82.png",
+    "static/media/profile-2.jpg": "/static/media/profile-2.7c06f30000fd8b439b30.jpg",
+    "static/media/guess-game.png": "/static/media/guess-game.75cc5a1aeffcbbad98dd.png",
+    "static/media/profile.jpg": "/static/media/profile.4b4736088f992a437f1d.jpg",
+    "static/media/drag&drop-todo.png": "/static/media/drag&drop-todo.fd72c19641833bfdd623.png",
+    "static/media/todo-list.png": "/static/media/todo-list.5bda31940dc5f76570b0.png",
+    "index.html": "/index.html",
+    "main.e10a1187.css.map": "/static/css/main.e10a1187.css.map",
+    "main.4a93a48a.js.map": "/static/js/main.4a93a48a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e10a1187.css",
+    "static/js/main.4a93a48a.js"
+  ]
+}

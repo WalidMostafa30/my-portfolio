@@ -1,0 +1,34 @@
+.Contact {
+  .Contact__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .Contact__talk-box {
+    width: 32%;
+    background-color: var(--main-card-color);
+    box-shadow: var(--main-shadow);
+    border-radius: var(--main-border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    padding: 20px;
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-10px);
+    }
+
+    svg {
+      font-size: 30px;
+    }
+
+    @media (max-width: 1200px) {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+  }
+}

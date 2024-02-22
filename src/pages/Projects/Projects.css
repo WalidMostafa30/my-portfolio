@@ -1,0 +1,76 @@
+.Projects {
+  .Projects__categorys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 20px 0;
+
+    @media (max-width: 768px) {
+      gap: 10px;
+    }
+  }
+
+  .Projects__cate {
+    color: var(--main-text-color);
+    background-color: var(--main-card-color);
+    padding: 10px 20px;
+    box-shadow: var(--main-shadow);
+    border-radius: var(--main-border-radius);
+    cursor: pointer;
+
+    &.active {
+      color: var(--main-card-color);
+      background-color: var(--main-text-color);
+    }
+
+    @media (max-width: 768px) {
+      padding: 5px 10px;
+    }
+  }
+
+  .Projects__cards {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    gap: 15px;
+
+    @media (max-width: 1200px) {
+      gap: 30px;
+    }
+  }
+
+  .Projects__card {
+    width: calc(100% / 3 - 10px);
+    background-color: var(--main-card-color);
+    box-shadow: var(--main-shadow);
+    border-radius: var(--main-border-radius);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 10px;
+
+    @media (max-width: 1200px) {
+      width: calc(100% / 2 - 15px);
+    }
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+
+    img {
+      width: 100%;
+      border-radius: 10px;
+      box-shadow: var(--main-shadow);
+    }
+  }
+
+  .Projects__card-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 10px;
+  }
+}

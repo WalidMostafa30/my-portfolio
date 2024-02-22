@@ -1,0 +1,136 @@
+.Home {
+  height: calc(100vh - 80px);
+}
+
+.Home__container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  @media (max-width: 1200px) {
+    flex-direction: column-reverse;
+    position: relative;
+    justify-content: center;
+    gap: 30px;
+  }
+}
+
+.Home__links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  a {
+    font-size: 32px;
+
+    &:hover {
+      transform: scale(1.03);
+    }
+  }
+
+  @media (max-width: 1200px) {
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  @media (max-width: 992px) {
+    display: none;
+  }
+}
+
+.Home_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  @media (max-width: 768px) {
+    gap: 10px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 22px;
+
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
+
+  h1 {
+    text-align: center;
+    font-size: 50px;
+
+    @media (max-width: 992px) {
+      font-size: 35px;
+    }
+  }
+
+  h4 {
+    text-align: center;
+    font-size: 30px;
+    font-weight: 400;
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      height: 2px;
+      width: 60px;
+      background-color: var(--main-p-color);
+    }
+
+    @media (max-width: 992px) {
+      font-size: 22px;
+      &::after {
+        width: 40px;
+      }
+    }
+  }
+
+  a {
+    margin: 10px auto;
+  }
+}
+
+.Home_profile {
+  margin-right: 50px;
+
+  @media (max-width: 1200px) {
+    margin-right: 0px;
+  }
+}
+
+.Home_img {
+  background: url(../../Images/profile.jpg) center center/cover no-repeat;
+  border: 10px solid lightgray;
+  width: 400px;
+  height: 400px;
+  animation: profile-animation 8s ease-in-out infinite 1s;
+
+  @media (max-width: 1200px) {
+    width: 300px;
+    height: 300px;
+  }
+
+  @media (max-width: 992px) {
+    width: 250px;
+    height: 250px;
+  }
+}
+
+@keyframes profile-animation {
+  0%,
+  100% {
+    border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+  }
+  50% {
+    border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+  }
+}

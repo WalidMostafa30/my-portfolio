@@ -1,0 +1,23 @@
+.GlobalTitle {
+  text-align: center;
+  margin-bottom: 70px;
+
+  h1 {
+    color: var(--main-text-color);
+    font-size: 50px;
+    margin-bottom: 15px;
+
+    @media (max-width: 768px) {
+      font-size: 40px;
+    }
+  }
+
+  p {
+    color: var(--main-p-color);
+    font-size: 20px;
+  }
+
+  @media (max-width: 768px) {
+    margin-bottom: 40px;
+  }
+}

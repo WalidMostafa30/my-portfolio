@@ -1,0 +1,184 @@
+.NavBar {
+  background-color: var(--main-bg-color);
+  width: 100%;
+  z-index: 1000;
+  position: sticky;
+  top: 0;
+  left: 0;
+
+  .NavBar__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 80px;
+  }
+
+  .NavBar__logo {
+    font-size: 40px;
+  }
+
+  .NavBar__links {
+    background-color: inherit;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+
+    @media (max-width: 1200px) {
+      position: absolute;
+      top: 80px;
+      left: 0;
+      width: 100%;
+      height: fit-content;
+      height: calc(100vh - 80px);
+      flex-direction: column;
+      justify-content: center;
+      transform: translateX(-100%);
+      box-shadow: 0px 14px 14px -12px black;
+      opacity: 0;
+      overflow: hidden;
+    }
+
+    &.open {
+      background-color: var(--main-bg-color);
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  .NavBar__link {
+    color: var(--main-text-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 400;
+    position: relative;
+
+    &::after {
+      position: absolute;
+      content: "";
+      left: 10px;
+      top: 11px;
+      width: 2px;
+      height: 0;
+      background-color: var(--main-text-color);
+      transition: 0.5s;
+    }
+
+    &::before {
+      position: absolute;
+      content: "";
+      right: 10px;
+      bottom: 11px;
+      width: 2px;
+      height: 0;
+      background-color: var(--main-text-color);
+      transition: 0.5s;
+    }
+
+    &:hover,
+    &.active {
+      transform: scale(1.2);
+
+      &::before,
+      &::after {
+        height: 50%;
+      }
+    }
+
+    @media (max-width: 1200px) {
+      padding: 20px 0;
+
+      &::before {
+        right: -10px;
+        bottom: 15px;
+      }
+
+      &::after {
+        left: -10px;
+        top: 18px;
+      }
+    }
+  }
+
+  .NavBar__icons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .NavBar__icon {
+    color: var(--main-text-color);
+    display: flex;
+    justify-content: center;
+    width: 45px;
+    cursor: pointer;
+    font-size: 26px;
+  }
+
+  .NavBar__brg-icon {
+    width: 36px;
+    height: 21px;
+    position: relative;
+    transform: rotate(0deg);
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    display: none;
+
+    span {
+      display: block;
+      position: absolute;
+      height: 3px;
+      width: 100%;
+      background-color: var(--main-text-color);
+      border-radius: 9px;
+      opacity: 1;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 0.25s ease-in-out;
+
+      &:nth-child(1) {
+        top: 0px;
+        transform-origin: left center;
+      }
+
+      &:nth-child(2) {
+        top: 9px;
+        transform-origin: left center;
+      }
+
+      &:nth-child(3) {
+        top: 18px;
+        transform-origin: left center;
+      }
+    }
+
+    &.open {
+      span {
+        &:nth-child(1) {
+          transform: rotate(45deg);
+          top: -6px;
+          left: 5px;
+        }
+
+        &:nth-child(2) {
+          width: 0%;
+          opacity: 0;
+        }
+
+        &:nth-child(3) {
+          transform: rotate(-45deg);
+          top: 20px;
+          left: 5px;
+        }
+      }
+    }
+
+    @media (max-width: 1200px) {
+      display: block;
+    }
+  }
+}

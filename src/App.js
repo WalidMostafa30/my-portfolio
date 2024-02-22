@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import "./css/App.css";
 import NavBar from "./components/NavBar/NavBar";
 import Home from "./pages/Home/Home";
@@ -7,8 +7,6 @@ import Skills from "./pages/Skills/Skills";
 import Projects from "./pages/Projects/Projects";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
-import Aos from "aos";
-import "aos/dist/aos.css";
 
 const App = () => {
   window.onscroll = () => {
@@ -38,9 +36,6 @@ const App = () => {
       nav.style.boxShadow = "none";
     }
   };
-  useEffect(() => {
-    Aos.init({ duration: 1000 });
-  }, []);
   return (
     <main>
       <NavBar />

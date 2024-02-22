@@ -2,11 +2,6 @@ import React from "react";
 import "./Home.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faPaperPlane } from "@fortawesome/free-solid-svg-icons";
-import {
-  faFacebook,
-  faGithub,
-  faLinkedin,
-} from "@fortawesome/free-brands-svg-icons";
 
 const Home = () => {
   return (
@@ -16,7 +11,6 @@ const Home = () => {
           <p>Hello I'm</p>
           <h1>Walid Mostafa 🖐</h1>
           <h4>FrontEnd Developer</h4>
-          
           <a href="#Contact" className="my-big-btn">
             Say Hello <FontAwesomeIcon icon={faPaperPlane} />
           </a>

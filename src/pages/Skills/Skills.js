@@ -9,19 +9,14 @@ const Skills = () => {
   return (
     <section className="Skills" id="Skills">
       <GlobalTitle title={"My Skills"} description={"My Technical Level"} />
-      <div className="Skills__container container" data-aos="fade-up">
+      <div className="Skills__container container">
         <div className="Skills__box">
           <h3>FrontEnd Developer</h3>
 
           <div className="Skills__skills">
             {skillsData.map((skill, index) => {
               return (
-                <div
-                  key={index}
-                  className="Skills__skill"
-                  data-aos="zoom-in"
-                  data-aos-delay="500"
-                >
+                <div key={index} className="Skills__skill" data-aos-delay="500">
                   <FontAwesomeIcon icon={faCircleCheck} />
                   <div className="Skills__skillName">
                     <h4>{skill.name}</h4>

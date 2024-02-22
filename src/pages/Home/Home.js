@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <section className="Home" id="Home">
       <div className="Home__container container">
-        <div className="Home__links" data-aos="fade-right">
+        <div className="Home__links">
           <a href="https://www.linkedin.com/in/walid-m0stafa-">
             <FontAwesomeIcon icon={faLinkedin} />
           </a>
@@ -23,7 +23,7 @@ const Home = () => {
             <FontAwesomeIcon icon={faFacebook} />
           </a>
         </div>
-        <div className="Home_info" data-aos="zoom-in">
+        <div className="Home_info">
           <p>Hello I'm</p>
           <h1>Walid Mostafa 🖐</h1>
           <h4>FrontEnd Developer</h4>
@@ -31,7 +31,7 @@ const Home = () => {
             Say Hello <FontAwesomeIcon icon={faPaperPlane} />
           </a>
         </div>
-        <div className="Home_profile" data-aos="fade-left">
+        <div className="Home_profile">
           <div className="Home_img"></div>
         </div>
       </div>

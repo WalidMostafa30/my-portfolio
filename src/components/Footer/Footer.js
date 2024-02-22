@@ -9,7 +9,7 @@ import {
 
 export default function Footer() {
   return (
-    <section className="Footer" data-aos="fade-up">
+    <section className="Footer">
       <div className="Footer__container container">
         <h1>Walid</h1>
         <div className="Footer__pages">

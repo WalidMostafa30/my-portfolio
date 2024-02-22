@@ -40,7 +40,6 @@ const Projects = () => {
                     : "Projects__cate"
                 }
                 onClick={() => filterProject(e, index)}
-                data-aos="zoom-in"
               >
                 {e}
               </span>
@@ -50,7 +49,7 @@ const Projects = () => {
         <div className="Projects__cards">
           {projectToMap.map((pro, index) => {
             return (
-              <div key={index} className="Projects__card" data-aos="fade-up">
+              <div key={index} className="Projects__card">
                 <img src={pro.img} alt="img" />
                 <h3>{pro.title}</h3>
                 <div className="Projects__card-btns">

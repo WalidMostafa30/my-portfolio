@@ -13,10 +13,10 @@ const About = () => {
     <section className="About" id="About">
       <GlobalTitle title={"My About"} description={"My Introduction"} />
       <div className="About__container container">
-        <div className="About__img" data-aos="zoom-in">
+        <div className="About__img">
           <img src={require("../../Images/profile-2.jpg")} alt="img" />
         </div>
-        <div className="About__info" data-aos="zoom-in">
+        <div className="About__info">
           <div className="About__info-boxs">
             <div className="About__info-box">
               <FontAwesomeIcon icon={faUserGraduate} />

@@ -10,19 +10,19 @@ const Contact = () => {
     <section className="Contact" id="Contact">
       <GlobalTitle title={"Contact Me"} description={"Get In Touch"} />
       <div className="Contact__container container">
-        <div className="Contact__talk-box" data-aos="fade-right">
+        <div className="Contact__talk-box">
           <FontAwesomeIcon icon={faEnvelope} />
           <h4>E-mail</h4>
           <p>walidmoustafa436@gmail.com</p>
         </div>
 
-        <div className="Contact__talk-box" data-aos="fade-up">
+        <div className="Contact__talk-box" >
           <FontAwesomeIcon icon={faWhatsapp} />
           <h4>Whatsapp</h4>
           <p>0106 525 4159</p>
         </div>
 
-        <div className="Contact__talk-box" data-aos="fade-left">
+        <div className="Contact__talk-box" >
           <FontAwesomeIcon icon={faFacebook} />
           <h4>Facebook</h4>
           <p>Walid Mostafa</p>

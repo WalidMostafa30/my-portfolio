@@ -16,31 +16,6 @@
   }
 }
 
-.Home__links {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-
-  a {
-    font-size: 32px;
-
-    &:hover {
-      transform: scale(1.03);
-    }
-  }
-
-  @media (max-width: 1200px) {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
-  }
-
-  @media (max-width: 992px) {
-    display: none;
-  }
-}
-
 .Home_info {
   display: flex;
   flex-direction: column;
@@ -96,14 +71,6 @@
 
   a {
     margin: 10px auto;
-  }
-}
-
-.Home_profile {
-  margin-right: 50px;
-
-  @media (max-width: 1200px) {
-    margin-right: 0px;
   }
 }
 

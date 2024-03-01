@@ -1,13 +1,24 @@
 .Contact {
   .Contact__container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    align-items: flex-start;
+    justify-content: space-around;
     flex-wrap: wrap;
   }
 
-  .Contact__talk-box {
-    width: 32%;
+  .Contact__talkToMe {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+
+    @media (max-width: 1200px) {
+      width: 100%;
+      margin-bottom: 50px;
+    }
+  }
+
+  .Contact__talkToMe-box {
     background-color: var(--main-card-color);
     box-shadow: var(--main-shadow);
     border-radius: var(--main-border-radius);
@@ -19,16 +30,49 @@
     cursor: pointer;
 
     &:hover {
-      transform: translateY(-10px);
+      transform: var(--main-trans);
     }
 
     svg {
       font-size: 30px;
     }
+  }
+
+  .Contact__form {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 30px;
 
     @media (max-width: 1200px) {
       width: 100%;
-      margin-bottom: 20px;
+      gap: 10px;
+    }
+  }
+
+  .Contact__form-input {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color-light);
+    border-radius: var(--main-border-radius);
+    padding: 20px;
+
+    textarea {
+      min-height: 150px;
+      max-height: 350px;
+    }
+
+    input,
+    textarea {
+      background-color: transparent;
+      border: none;
+      outline: none;
+      font-size: 26px;
+
+      @media (max-width: 992px) {
+        font-size: 20px;
+      }
     }
   }
 }

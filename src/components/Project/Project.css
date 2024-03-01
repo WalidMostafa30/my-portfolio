@@ -1,0 +1,72 @@
+.Portfolio__project {
+  background-color: var(--main-card-color);
+  box-shadow: var(--main-shadow);
+  border-radius: var(--main-border-radius);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+
+  .Portfolio__project-img {
+    position: relative;
+    box-shadow: var(--main-shadow);
+    border-radius: var(--main-border-radius);
+    overflow: hidden;
+    height: 300px;
+    
+    img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .Portfolio__project-btns {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 150px;
+    background-color: #6c55e0e9;
+    opacity: 0;
+
+    &:hover {
+      gap: 20px;
+      opacity: 1;
+    }
+  }
+
+  .Portfolio__project-btn {
+    width: 150px;
+    font-size: 22px;
+    background-color: transparent;
+    border: 2px solid white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px 0;
+
+    &,
+    path {
+      color: white;
+    }
+
+    &:hover {
+      background-color: white;
+
+      &,
+      path {
+        color: var(--main-color);
+      }
+    }
+  }
+
+  .Portfolio__project-title {
+    padding: 10px;
+  }
+}

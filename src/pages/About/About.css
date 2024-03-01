@@ -3,22 +3,13 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
-    @media (max-width: 1400px) {
-      gap: 30px;
-    }
   }
 
   .About__img {
-    width: calc(100% / 2 - 50px);
+    width: 45%;
 
     @media (max-width: 1400px) {
-      width: 50%;
-      margin: auto;
-    }
-
-    @media (max-width: 768px) {
-      width: 80%;
+      display: none;
     }
 
     img {
@@ -28,7 +19,7 @@
   }
 
   .About__info {
-    width: calc(100% / 2 - 50px);
+    width: 50%;
 
     @media (max-width: 1400px) {
       width: 100%;
@@ -38,6 +29,8 @@
   .About__info-boxs {
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 20px;
 
     @media (max-width: 768px) {
       flex-direction: column;
@@ -46,34 +39,16 @@
   }
 
   .About__info-box {
-    background-color: var(--main-card-color);
-    width: calc(100% / 2 - 5px);
-    border-radius: var(--main-border-radius);
-    box-shadow: var(--main-shadow);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    gap: 10px;
-    padding: 10px;
-    text-align: center;
-    cursor: pointer;
-
-    &:hover {
-      transform: translateY(-10px);
-    }
+    width: calc(100% / 2 - 10px);
 
     @media (max-width: 768px) {
       width: 100%;
       margin-bottom: 10px;
     }
+  }
 
-    svg {
-      font-size: 30px;
-    }
-
-    p {
-      font-weight: 400;
-    }
+  .About__info-box:last-child {
+    width: 100%;
   }
 
   .About__info-article {

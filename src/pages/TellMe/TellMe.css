@@ -1,0 +1,47 @@
+.TellMe {
+  background-color: var(--main-color);
+  padding: 50px 0;
+
+  .TellMe__container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    @media (max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+  }
+
+  .TellMe__text {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    @media (max-width: 992px) {
+      align-items: center;
+    }
+
+    h1,
+    h5 {
+      color: white;
+
+      @media (max-width: 992px) {
+        text-align: center;
+      }
+    }
+
+    a {
+      background-color: white;
+      color: var(--main-color);
+      margin-top: 20px;
+    }
+  }
+
+  img {
+    width: 30%;
+
+    @media (max-width: 992px) {
+      width: 60%;
+    }
+  }
+}

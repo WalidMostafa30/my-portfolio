@@ -20,7 +20,7 @@ export const skillsData = [
   {
     name: "Next JS",
     icon: `<i class="fa-solid fa-n"></i>`,
-    deg: 60,
+    deg: 70,
     rate: "Intermediate",
   },
   {
@@ -65,9 +65,15 @@ export const skillsData = [
     deg: 70,
     rate: "Intermediate",
   },
+  {
+    name: "Responsive Design",
+    icon: `<i class="fa-brands fa-github"></i>`,
+    deg: 90,
+    rate: "Intermediate",
+  },
 ];
 
-export const projectsData = [
+export const PortfolioData = [
   {
     title: "Shopping Cart",
     img: require("../Images/shopping-cart.png"),

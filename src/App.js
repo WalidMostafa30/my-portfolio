@@ -4,9 +4,11 @@ import NavBar from "./components/NavBar/NavBar";
 import Home from "./pages/Home/Home";
 import About from "./pages/About/About";
 import Skills from "./pages/Skills/Skills";
-import Projects from "./pages/Projects/Projects";
+import Portfolio from "./pages/Portfolio/Portfolio";
 import Contact from "./pages/Contact/Contact";
 import Footer from "./components/Footer/Footer";
+import Services from "./pages/Services/Services";
+import TellMe from "./pages/TellMe/TellMe";
 
 const App = () => {
   window.onscroll = () => {
@@ -31,7 +33,7 @@ const App = () => {
     });
 
     if (window.scrollY >= 40) {
-      nav.style.boxShadow = "0px 0px 20px -12px black";
+      nav.style.boxShadow = "0px 0px 20px -7px var(--main-color)";
     } else {
       nav.style.boxShadow = "none";
     }
@@ -42,7 +44,9 @@ const App = () => {
       <Home />
       <About />
       <Skills />
-      <Projects />
+      <Services />
+      <TellMe />
+      <Portfolio />
       <Contact />
       <Footer />
     </main>

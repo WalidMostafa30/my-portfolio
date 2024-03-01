@@ -1,0 +1,21 @@
+.Services {
+  .Services__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+
+  .Services__card {
+    width: calc(100% / 3 - 20px);
+
+    @media (max-width: 1400px) {
+      width: calc(100% / 2 - 20px);
+    }
+
+    @media (max-width: 992px) {
+      width: 100%;
+    }
+  }
+}

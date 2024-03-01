@@ -1,0 +1,48 @@
+.Portfolio {
+  .Portfolio__categorys {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 20px;
+
+    @media (max-width: 768px) {
+      gap: 10px;
+    }
+  }
+
+  .Portfolio__cate {
+    color: var(--main-text-color);
+    background-color: var(--main-card-color);
+    padding: 10px 20px;
+    box-shadow: var(--main-shadow);
+    border-radius: var(--main-border-radius);
+    cursor: pointer;
+
+    &.active {
+      color: white;
+      background-color: var(--main-color);
+    }
+
+    @media (max-width: 768px) {
+      padding: 5px 10px;
+    }
+  }
+
+  .Swiper {
+    padding: 60px 10px;
+
+    .swiper-pagination {
+      span {
+        width: 20px;
+        height: 20px;
+        background-color: var(--main-text-color);
+
+        &.swiper-pagination-bullet-active-main {
+          background-color: var(--main-color);
+        }
+      }
+    }
+  }
+}

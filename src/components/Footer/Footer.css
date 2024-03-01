@@ -4,21 +4,39 @@
   .Footer__container {
     display: flex;
     align-items: center;
-    flex-direction: column;
+    justify-content: space-between;
     gap: 20px;
 
     h1 {
       font-size: 50px;
+      color: var(--main-color);
+    }
+
+    @media (max-width: 1200px) {
+      flex-direction: column;
+      padding-bottom: 80px;
     }
   }
 
   .Footer__pages {
     display: flex;
     align-items: center;
-    gap: 20px;
+    gap: 30px;
 
     a {
       font-size: 20px;
+
+      &:hover {
+        color: var(--main-color);
+      }
+    }
+
+    @media (max-width: 1200px) {
+      gap: 20px;
+
+      a {
+        font-size: 18px;
+      }
     }
   }
 
@@ -27,8 +45,14 @@
     align-items: center;
     gap: 20px;
 
-    a {
+    svg {
       font-size: 30px;
+
+      &:hover {
+        path {
+          color: var(--main-color);
+        }
+      }
     }
   }
 }

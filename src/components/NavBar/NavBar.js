@@ -2,6 +2,14 @@ import React, { useEffect, useState } from "react";
 import "./NavBar.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMoon, faSun } from "@fortawesome/free-regular-svg-icons";
+import {
+  faBriefcase,
+  faFileInvoice,
+  faHome,
+  faImage,
+  faPaperPlane,
+  faUser,
+} from "@fortawesome/free-solid-svg-icons";
 
 const NavBar = () => {
   const [showNav, setShowNav] = useState(false);
@@ -46,18 +54,27 @@ const NavBar = () => {
           onClick={handleNav}
         >
           <a className="NavBar__link active" href="#Home">
+            <FontAwesomeIcon icon={faHome} />
             Home
           </a>
           <a className="NavBar__link" href="#About">
+            <FontAwesomeIcon icon={faUser} />
             About
           </a>
           <a className="NavBar__link" href="#Skills">
+            <FontAwesomeIcon icon={faFileInvoice} />
             Skills
           </a>
-          <a className="NavBar__link" href="#Projects">
-            Projects
+          <a className="NavBar__link" href="#Services">
+            <FontAwesomeIcon icon={faBriefcase} />
+            Services
+          </a>
+          <a className="NavBar__link" href="#Portfolio">
+            <FontAwesomeIcon icon={faImage} />
+            Portfolio
           </a>
           <a className="NavBar__link" href="#Contact">
+            <FontAwesomeIcon icon={faPaperPlane} />
             Contact
           </a>
         </div>

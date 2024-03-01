@@ -7,29 +7,39 @@ import {
   faLocationDot,
   faUserGraduate,
 } from "@fortawesome/free-solid-svg-icons";
+import GlobalCard from "../../components/GlobalCard/GlobalCard";
+import CV from "../../Images/Walid-CV.pdf";
+import {  faHourglassHalf } from "@fortawesome/free-regular-svg-icons";
 
 const About = () => {
   return (
     <section className="About" id="About">
-      <GlobalTitle title={"My About"} description={"My Introduction"} />
+      <GlobalTitle title={"About Me"} description={"My Introduction"} />
       <div className="About__container container">
         <div className="About__img">
-          <img src={require("../../Images/profile-2.jpg")} alt="img" />
+          <img src={require("../../Images/Hand coding-bro.png")} alt="img" />
         </div>
         <div className="About__info">
           <div className="About__info-boxs">
-            <div className="About__info-box">
-              <FontAwesomeIcon icon={faUserGraduate} />
-              <h3>Education</h3>
-              <p>BACHELOR'S DEGREE IN COMPUTER SCIENCE</p>
-              <p>GRADUATION YEAR: 2022 - 2023</p>
-            </div>
-
-            <div className="About__info-box">
-              <FontAwesomeIcon icon={faLocationDot} />
-              <h3>Location</h3>
-              <p>Egypt, Mansoura</p>
-            </div>
+            <GlobalCard
+              head={"Age"}
+              icon={faHourglassHalf}
+              info={"23 year"}
+              class2={"About__info-box"}
+            />
+            <GlobalCard
+              head={"Location"}
+              icon={faLocationDot}
+              info={"Egypt, Mansoura"}
+              class2={"About__info-box"}
+            />
+            <GlobalCard
+              head={"Education"}
+              icon={faUserGraduate}
+              info={"BACHELOR'S DEGREE IN COMPUTER SCIENCE"}
+              info2={"GRADUATION YEAR: 2022 - 2023"}
+              class2={"About__info-box"}
+            />
           </div>
           <div className="About__info-article">
             <p>
@@ -38,7 +48,7 @@ const About = () => {
               As a frontend developer, I specialize in bringing designs to life
               with clean, efficient, and responsive code.
             </p>
-            <a href="#d" className="my-big-btn">
+            <a download="" href={CV} className="my-big-btn">
               Downloud CV <FontAwesomeIcon icon={faFileInvoice} />
             </a>
           </div>

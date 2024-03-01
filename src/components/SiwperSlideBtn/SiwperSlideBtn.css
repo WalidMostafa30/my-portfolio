@@ -1,0 +1,26 @@
+.SiwperSlideBtn {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 20px;
+
+  button {
+    background-color: var(--main-card-color);
+    color: var(--main-color);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid var(--main-color);
+    font-size: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+      background-color: var(--main-color);
+      color: white;
+    }
+  }
+}

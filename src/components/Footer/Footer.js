@@ -15,7 +15,8 @@ export default function Footer() {
         <div className="Footer__pages">
           <a href="#About">About</a>
           <a href="#Skills">Skills</a>
-          <a href="#Projects">Projects</a>
+          <a href="#Services">Services</a>
+          <a href="#Portfolio">Projects</a>
         </div>
         <div className="Footer__links">
           <a href="https://www.facebook.com/profile.php?id=100011538554307&mibextid=ZbWKwL">

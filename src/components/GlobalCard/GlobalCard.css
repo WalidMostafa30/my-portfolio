@@ -1,0 +1,32 @@
+.GlobalCard {
+  background-color: var(--main-card-color);
+  border-radius: var(--main-border-radius);
+  box-shadow: var(--main-shadow);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  padding: 20px;
+  text-align: center;
+  cursor: pointer;
+
+  svg,
+  path {
+    font-size: 50px;
+    color: var(--main-color);
+  }
+
+  p {
+    font-weight: 400;
+  }
+
+  &:hover {
+    background-color: var(--main-color);
+    &,
+    path,
+    h3,
+    p {
+      color: white;
+    }
+  }
+}
